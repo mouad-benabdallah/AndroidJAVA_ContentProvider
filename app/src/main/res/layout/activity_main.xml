@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="14"
+        android:hint="@string/lastname_hint_text"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextFirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="0dp"
+        android:ems="14"
+        android:hint="@string/firstname_hint_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastname" />
+
+    <EditText
+        android:id="@+id/editTextVille"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="0dp"
+        android:ems="14"
+        android:hint="@string/ville_hint_text"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstname" />
+
+    <EditText
+        android:id="@+id/editTextCodePostal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:ems="14"
+        android:hint="@string/codepostal_hint_text"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textColorHint="@color/hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVille" />
+
+    <Button
+        android:id="@+id/buttonAjouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="ajouter"
+        android:text="@string/btn_ajouter_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodePostal" />
+
+    <Button
+        android:id="@+id/buttonAfficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="afficher"
+        android:text="@string/btn_afficher_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjouter" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAfficher" />
+</androidx.constraintlayout.widget.ConstraintLayout>

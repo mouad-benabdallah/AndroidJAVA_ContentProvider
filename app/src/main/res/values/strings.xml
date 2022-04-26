@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContentProvider</string>
+    <string name="lastname_hint_text">Nom</string>
+    <string name="firstname_hint_text">Prénom</string>
+    <string name="ville_hint_text">Ville</string>
+    <string name="codepostal_hint_text">Code postal</string>
+    <string name="btn_ajouter_text">Ajouter</string>
+    <string name="btn_afficher_text">Afficher</string>
+</resources>
